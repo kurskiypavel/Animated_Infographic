@@ -2,6 +2,8 @@
 
 This work is an animated infographic website to show to people how to be a web dev nowadays.
 
+![](https://i.imgflip.com/2aeyz7.gif)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
