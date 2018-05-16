@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Project 03 Framework</title>
+
+    <!-- link to css files -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <!-- link to js files -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <main>
+
+
+        <!-- SCREEN 1 -->
+        <section id="screen1">
+            <div class="player-btn">
+                <i class="far fa-play-circle"></i>
+                <i class="far fa-pause-circle"></i>
+            </div>
+
+
+
+            <div class="arrow-hint">
+                <p>Use &#8592; and &#8594; keys
+                    <br>for navigation</p>
+            </div>
+
+            <img id="main" src="images/main_section_title.png" alt="" srcset="">
+
+            <article class="typewriter-wrapper">
+                <div>
+                    <p id="estimation" class="typewriter-text estimation">ESTIMATION IN PROGRESS...</p>
+                </div>
+            </article>
+            <img class="next" src="images/next.svg" alt="" srcset="">
+
+        </section>
+
+
+        <!-- SCREEN 2 -->
+        <section id="screen2">
+            <div class="player-btn">
+                <i class="far fa-play-circle"></i>
+                <i class="far fa-pause-circle"></i>
+            </div>
+            <div class="header">
+
+                <img class="title" src="images/year1_2.svg" alt="" srcset="">
+                <img id="rollIn" src="images/planet_icon.svg" alt="" srcset="">
+
+            </div>
+
+
+            <div class="body">
+
+                <p class="mainText">Once upon a time HTML and CSS were learnable and that wasn’t so many changes for years.
+                    <br> But now…</p>
+                <img class="screen2hands" id="left_langs" src="images/left_langs1.png" alt="" srcset="">
+                <!-- place bar chart onto display -->
+                <div class="bar">
+
+
+                    <div class="charts">
+                        <div class="chart chart-dev">
+                            <img src="images/chart0.svg" alt="" srcset="">
+                            <ul class="chart-horiz">
+                                <li class="chart_bar" id="sass" style="width: 90.5%;">
+                                </li>
+                                <li class="chart_bar" id="bootstrap" style="width: 35.8%;">
+                                </li>
+                                <li class="chart_bar" id="jQuery" style="width: 31.8%;">
+                                </li>
+                                <li class="chart_bar" id="js" style="width: 25.4%;">
+                                </li>
+                                <li class="chart_bar" id="css" style="width: 20%;">
+                                </li>
+                                <li class="chart_bar" id="html" style="width: 13.4%;">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <img id="display" src="images/display.svg" alt="" srcset="">
+                <img class="screen2hands" id="right_langs" src="images/right_langs_1.png" alt="" srcset="">
+
+            </div>
+
+            <nav>
+                <img class="prev" src="images/prev.svg" alt="" srcset="">
+                <img class="next" src="images/next.svg" alt="" srcset="">
+            </nav>
+
+        </section>
+
+        <!-- SCREEN 3 -->
+        <section id="screen3">
+
+            <div class="player-btn">
+                <i class="far fa-play-circle"></i>
+                <i class="far fa-pause-circle"></i>
+            </div>
+            <div class="header">
+                <img class="title" src="images/year2_4.svg" alt="" srcset="">
+            </div>
+
+            <div class="body">
+                <p class="mainText">Okay. But then after I’ve done with facade I’d like to change things and reflect them on server...
+                    <br> You don’t know the server just yet, but you will soon...So...</p>
+                <div class="row box">
+                    <img class="col-6" id="frames" src="images/frames.png" alt="" srcset="">
+
+                    <div class="col-6" id="pieChart">
+                        <h4>THINGS TO KNOW BY POPULARITY</h4>
+                        <!-- add pie chart later -->
+                        <img src="images/chart1.svg" alt="piechart" srcset="">
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <img class="prev" src="images/prev.svg" alt="" srcset="">
+                <img class="next" src="images/next.svg" alt="" srcset="">
+            </nav>
+        </section>
+
+        <!-- SCREEN 4 -->
+        <section id="screen4">
+
+            <div class="player-btn">
+                <i class="far fa-play-circle"></i>
+                <i class="far fa-pause-circle"></i>
+            </div>
+            <div class="header">
+                <!-- change to 4-7 svg . extport -->
+                <img class="title" src="images/year2_4.svg" alt="" srcset="">
+            </div>
+
+            <nav>
+                <img class="prev" src="images/prev.svg" alt="" srcset="">
+                <img class="next" src="images/next.svg" alt="" srcset="">
+            </nav>
+
+
+
+
+            <div class="body">
+                <div class="row box">
+                    <div class="col-6">
+
+                        <img class="sub_title" id="concepts" src="images/concepts_and_tools.png" alt="" srcset="">
+                        <div class="row">
+                            <div class="col-6 closer" id="concept">
+                                <img class="serp" src="images/serp.svg" alt="" srcset="">
+                                <ul>
+                                    <li>OOP</li>
+                                    <li>Inheritance</li>
+                                    <li>Composition</li>
+                                    <li>Encapsulation</li>
+                                </ul>
+                                <ul>
+                                    <li>Interfaces</li>
+                                    <li>CLI</li>
+                                    <li>Git</li>
+                                    <li>GitHub</li>
+                                    <li>VIM</li>
+                                    <li>Apache/Ngnix</li>
+                                    <li>Virtual Machine</li>
+                                    <li>Vargants</li>
+                                    <li>Homestead</li>
+                                    <li>Forge</li>
+                                </ul>
+                            </div>
+                            <div class="col-6 closer" id="conceptTwo">
+                                <img class="molot" src="images/molot.svg" alt="" srcset="">
+                                <ul>
+                                    <li>MVC</li>
+                                    <li>Namespacing</li>
+                                    <li>RegExp</li>
+                                </ul>
+                                <ul>
+                                    <li>Testing</li>
+                                    <li>PHP Unit or</li>
+                                    <li>PHP Spec or</li>
+                                    <li>Behat</li>
+                                </ul>
+                                <div class="bunnyMagic">
+                                    <p>Take a break and look at these cute sleeping rabbits...</p>
+                                    <img class="bunny" src="images/bunny.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-6" id="rocketLauncher">
+                                <img class="rocket" src="images/rocket.svg" alt="" srcset="">
+                                <p class="const">Ready to move on? Okay...</p>
+                            </div>
+                            <div class="col-6" id="tools">
+                                <img class="sub_title" src="images/design_and_tools.png" alt="" srcset="">
+                                <ul>
+                                    <li>UX Design</li>
+                                    <li>Photoshop</li>
+                                    <li>Wordpress</li>
+                                    <li>User Journey</li>
+                                    <li>User Psychology</li>
+                                    <br>
+                                    <li>Chrome Dev Tools</li>
+                                    <li>Performance Tuning</li>
+                                    <li>PSR/Crud and REST</li>
+                                    <li>Active record versus</li>
+                                    <li>Data mapper</li>
+                                    <li>TDD/BDD/DDD</li>
+                                    <br>
+                                    <li>Scalability...</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+        <!-- SCREEN 5 -->
+        <section id="screen5">
+            <div class="player-btn">
+                <i class="far fa-play-circle"></i>
+                <i class="far fa-pause-circle"></i>
+            </div>
+            <div class="body">
+                <img class="brains" src="images/screen5_back.png" alt="" srcset="">
+                <div class="text-area">
+                    <p>That’s it?</p>
+                    <p>Well..NO...</p>
+                    <p>This is a growing world and changing every week </p>
+                    <p>Because comunity continues to produce new frameworks and goodies...and you have to be acknowledgeble
+                        about it too...</p>
+                    <p>This is how your tool set might change over 1 year for very general tools...</p>
+                </div>
+                <div class="info-graph">
+                    <img id="skills" src="images/7skills.png" alt="" srcset="">
+                    <img id="chart2" src="images/chart2.svg" alt="">
+                </div>
+            </div>
+
+            <nav>
+                <img class="prev" src="images/prev.svg" alt="" srcset="">
+                <img class="next" src="images/next.svg" alt="" srcset="">
+            </nav>
+
+        </section>
+
+        <!-- SCREEN 6 -->
+        <section id="screen6">
+
+            <div class="body">
+                <img id="references" src="images/references.png" alt="">
+
+                <p>https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c</p>
+                <p>https://www.payscale.com/research/CA/Job=Web_Developer/Salary</p>
+
+            </div>
+            <nav>
+                <img class="prev" src="images/prev.svg" alt="" srcset="">
+            </nav>
+
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/arrowKey.js"></script>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/regular.js" integrity="sha384-JWLWlnwX0pRcCBsI3ZzOEyVDoUmngnFnbXR9VedCc3ko4R3xDG+KTMYmVciWbf4N"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/fontawesome.js" integrity="sha384-M2FSA4xMm1G9m4CNXM49UcDHeWcDZNucAlz1WVHxohug0Uw1K+IpUhp/Wjg0y6qG"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

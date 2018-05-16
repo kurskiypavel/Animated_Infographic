@@ -1,0 +1,472 @@
+/* GENERAL STYLES - NOT TO BE EDITED */
+
+/* make sure padding does not add to the width of a div */
+
+// sass --watch css/style.scss:css/style.css --style compressed
+* {
+    box-sizing: border-box;
+}
+
+/* stop page from scrolling */
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    font-family: Helvetica, sans-serif;
+}
+
+.player-btn {
+    position: absolute;
+    z-index: 100;
+    color: #D9544D;
+    font-size: 25px;
+    svg{
+        margin: 10px 5px;
+        &:hover{
+            font-size: 29px;
+        }
+    }
+    
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+    color: #3a3939;
+}
+
+.row {
+    overflow: hidden;
+}
+
+main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 960px;
+    height: 600px;
+    overflow: hidden;
+}
+
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #fefef6;
+}
+
+.next,
+.prev {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+}
+
+/* GENERAL STYLES - MAY BE EDITED */
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.mainText {
+    color: #3a3939;
+}
+
+/* SCREEN #1 */
+
+#screen1 {
+    .arrow-hint {
+        transform: rotate(28deg);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        opacity: 1;
+        text-align: center;
+        color: rgb(58, 57, 57);
+        font-weight: bold;
+    }
+    #main {
+        height: 100%;
+        position: fixed;
+        top: 19px;
+        right: 15%;
+    }
+    #estimation {
+        position: fixed;
+        top: 486px;
+        left: 198px;
+        z-index: 1;
+        font-size: 30pt;
+        color: #FEFEF6;
+    }
+}
+
+/* SCREEN #2 */
+
+#screen2 {
+    .header {
+        .title {
+            // margin-left: 320px;
+            margin-right: 10px;
+            width: 365px;
+            position: fixed;
+            left: 300px;
+            top: 10px;
+        }
+        #rollIn {
+            width: 260px;
+            position: fixed;
+            transform: rotate(0deg);
+            right: 0px;
+            top: -90px;
+        }
+    }
+    .body {
+        text-align: center;
+        font-size: 23px;
+        font-family: Helvetica;
+        margin-top: 160px;
+        .mainText {
+            text-align: left;
+            margin-top: 0px;
+            margin-left: 188px;
+            margin-right: 141px;
+            color: rgb(58, 57, 57);
+        }
+        .bar {
+            position: absolute;
+            bottom: 56%;
+            left: 31%;
+            width: 326px;
+            img {
+                width: 400px;
+                position: absolute;
+                left: 0;
+            }
+        } // colors for bars
+        #sass {
+            background: #5FC9CF;
+        }
+        #bootstrap {
+            background: #8FD9DE;
+        }
+        #jQuery {
+            background: #B1E5E8;
+        }
+        #js {
+            background: #C0E9EC;
+        }
+        #css {
+            background: #D9F2F4;
+        }
+        #html {
+            background: #4AC2C9;
+        }
+        .charts {
+            width: 86%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        .chart {
+            margin: 30px 0 0;
+        }
+        .chart:first-child {
+            margin: 0;
+        }
+        .chart-horiz {
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+        }
+        .chart_bar {
+            height: 27px;
+            margin-bottom: 10px;
+            margin-left: 13px; // background: linear-gradient(to left, #4cb8c4, #3cd3ad);
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            opacity: 0;
+            animation: 1s anim-lightspeed-in ease forwards;
+        }
+        .chart-dev .chart_bar:nth-of-type(6) {
+            animation-delay: 1.7s;
+        }
+        .chart-dev .chart_bar:nth-of-type(5) {
+            animation-delay: 1.5s;
+        }
+        .chart-dev .chart_bar:nth-of-type(4) {
+            animation-delay: 1.3s;
+        }
+        .chart-dev .chart_bar:nth-of-type(3) {
+            animation-delay: 1.1s;
+        }
+        .chart-dev .chart_bar:nth-of-type(2) {
+            animation-delay: 0.9s;
+        }
+        .chart-dev .chart_bar:nth-of-type(1) {
+            animation-delay: 0.7s;
+        }
+        @keyframes anim-lightspeed-in {
+            0% {
+                transform: translateX(-200%);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .screen2hands {
+            width: 23%;
+            margin-right: -82px;
+            margin-left: 51px;
+        }
+        #left_langs {
+            opacity: 1;
+        }
+        #right_langs {
+            margin-right: 31px;
+            margin-left: -87px;
+            opacity: 1;
+        }
+        #display {
+            width: 46%;
+        }
+    }
+}
+
+/* SCREEN #3 */
+
+#screen3 {
+    .header {
+        .title {
+            margin-right: 10px;
+            width: 365px;
+            position: fixed;
+            left: 300px;
+            top: 10px;
+        }
+    }
+    .body {
+        text-align: center;
+        font-size: 23px;
+        font-family: Helvetica;
+        margin-top: 160px;
+        .mainText {
+            text-align: left;
+            margin-top: 0px;
+            margin-left: 188px;
+            margin-right: 141px;
+        }
+        .row {
+            img {
+                width: 334px;
+            }
+            h4 {
+                color: #da534d;
+            }
+            .col-6:last-child {
+                margin-left: 50px;
+            }
+        }
+        .box {
+            margin-left: 87px;
+            margin-right: 87px;
+            #pieChart{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* SCREEN #4 */
+
+#screen4 {
+    .header {
+        .title {
+            margin-right: 10px;
+            width: 365px;
+            position: fixed;
+            left: 300px;
+            top: 10px;
+        }
+    }
+    .body {
+        // text-align: center;
+        font-size: 23px;
+        font-family: Helvetica;
+        margin-top: 107px;
+        .serp {
+            position: absolute;
+            left: 59px;
+            top: 164.6px;
+            width: 19%;
+        }
+        .molot {
+            position: absolute;
+            right: 59px;
+            bottom: 164.6px;
+            width: 19%;
+        }
+        .box {
+            margin-left: 87px;
+            margin-right: 47px;
+        }
+    }
+}
+
+.col-6 {
+    width: 50%;
+    .sub_title {
+        width: 150px;
+    }
+    #concepts {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .rocket {
+        width: 103.25px;
+        
+        position: absolute;
+        top:335px;
+    }
+    ul {
+        margin-top: 0px;
+        margin-bottom: 30px;
+        li {
+            font-size: 13pt;
+            margin-bottom: 5px;
+            
+        }
+    }
+    
+    p {
+        font-style: italic;
+        color: rgb(58, 57, 57);
+        margin: 0;
+        font-size: 14pt;
+        font-weight: 200;
+    }
+    .const {
+        // padding-top: 426.833px;
+    }
+    .bunny {
+        width: 190px;
+    }
+    .closer {
+        width: 190px;
+    }
+
+
+    #concept ul{
+        left: 0;
+    }
+
+    #conceptTwo ul{
+        left: 0;
+    }
+
+    #tools li{
+        right: 0;
+    }
+
+    
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+#screen5 {
+    .body {
+        color: rgb(58, 57, 57);
+        .brains {
+            width: 111%;
+            position: absolute;
+            bottom: 97px;
+        }
+        .text-area {
+            margin: 150px;
+            font-size: 20pt;
+            p {}
+        }
+        .info-graph {
+            display: none;
+            text-align: center;
+            #skills {
+                width: 500px;
+            }
+            #chart2 {
+                width: 466px;
+            }
+        }
+    }
+}
+
+#screen6 {
+    .body {
+        width: 800px;
+        margin: 10px 87px;
+        #references {
+            width: inherit;
+        }
+        p {
+            font-size: 18pt;
+            color: rgb(58, 57, 57);
+        }
+    }
+}
+
+/* ANIMATION */
+
+// Section 1
+// Typewritter animation
+body .typewriter-wrapper {
+    display: flex;
+}
+
+body .typewriter-wrapper .typewriter-text {
+    width: 0;
+    white-space: nowrap;
+    border-right: 1px solid rgba(255, 255, 255, 0.75);
+    overflow: hidden;
+}
+
+.estimation {
+    animation: remove-blink 0s 0s step-end forwards, typewriter 3s 3.5s steps(40, end) forwards, blink 1s 6.5s step-end infinite;
+}
+
+@keyframes typewriter {
+    0% {
+        width: 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.75);
+    }
+    100% {
+        width: 570px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+    }
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgba(255, 255, 255, 0.75);
+    }
+}
+
+// Arrow-hint animation
+//Section 2
